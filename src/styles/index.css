@@ -1,12 +1,14 @@
+.counter {
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/17/10/04/time-2860031_1280.jpg);
+ }
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+ .counter div{
+     display: inline-block;
+     font-size: 60px;
+     line-height: 60px;
+     background: #030303;
+     color: white;
+     padding: 10px;
+     margin: 3px;
+ }
