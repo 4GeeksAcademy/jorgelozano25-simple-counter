@@ -1,6 +1,8 @@
 .counter {
-    text-align: center;
+   text-align: center;
     background-image: url(https://cdn.pixabay.com/photo/2017/10/17/10/04/time-2860031_1280.jpg);
+    height: 200px;
+    
  }
 
  .counter div{
@@ -11,4 +13,5 @@
      color: white;
      padding: 10px;
      margin: 3px;
+     margin-top: 60px;
  }

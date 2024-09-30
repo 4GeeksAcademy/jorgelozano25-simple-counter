@@ -104,14 +104,15 @@ const Home = () => {
                 <div className="minutes">{minutes < 10 ? `0${minutes}` : minutes}</div>
                 <div className="seconds">{seconds < 10 ? `0${seconds}` : seconds}</div>
             </div>
+           
+            <div className="d-flex justify-content-center m-4">
+                <button className={isRunning ? 'btn btn-light border-primary' : 'btn btn-light border-success'} onClick={toggleRunning}>{isRunning ? <FontAwesomeIcon icon={faPause} style={{color: "#0d6efd"}}  /> : <FontAwesomeIcon icon={faPlay} style={{color: "#198754"}}  />}</button>
+                <button className="btn btn-danger mx-2" onClick={reset}><FontAwesomeIcon icon={faRepeat} style={{color: "#fff"}}  /></button>
+            </div>
+
             <div className="d-flex justify-content-center m-4">
                 <input type="number" value={inputSeconds} onChange={input} placeholder="Introducir segundos" />
                 <button className="regresiveBtn" onClick={startCountdown}>Cuenta Atrás   <FontAwesomeIcon icon={faClockRotateLeft} /> </button>
-            </div>
-            {/* botones */}
-            <div className="d-flex justify-content-center">
-                <button className={isRunning ? 'btn btn-light border-primary' : 'btn btn-light border-success'} onClick={toggleRunning}>{isRunning ? <FontAwesomeIcon icon={faPause} style={{color: "#0d6efd"}}  /> : <FontAwesomeIcon icon={faPlay} style={{color: "#198754"}}  />}</button>
-                <button className="btn btn-danger mx-2" onClick={reset}><FontAwesomeIcon icon={faRepeat} style={{color: "#fff"}}  /></button>
             </div>
 
         </>
